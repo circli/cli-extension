@@ -1,0 +1,32 @@
+{
+  "name": "circli/cli",
+  "type": "circli-extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andreas Sundqvist",
+      "email": "andreas@oak-valley.se"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "circli/contracts": "dev-master",
+    "circli/event-dispatcher": "^2.0",
+    "php-di/php-di": "^6.0",
+    "psr/container": "^1.0",
+    "psr/log": "^1.0",
+    "fig/event-dispatcher-util": "^1.0",
+    "psr/event-dispatcher": "^1.0",
+    "symfony/console": "^4.3",
+    "sunkan/enum": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Circli\\Cli\\": "src/"
+    }
+  },
+  "bin": [
+    "console"
+  ]
+}
